@@ -1,0 +1,114 @@
+{% include header.html %}
+
+<div id="main">
+	<section>
+		<header>
+			<h5>Vi Key Binding</h5>
+		</header>
+		<div>
+			<textarea id="ta" cols="60" rows="38">
+  安魂曲 -- by yarco
+
+在我心里 你已经死了
+
+曾经这是个黑暗的世界
+曾经你是这世界里的一抹亮色
+曾经你是如此纯洁
+曾经你是如此美丽
+温暖如冬日里的太阳
+香甜似夏天里的清泉
+
+可
+欲望
+或贪婪
+或贫穷
+或懦弱
+或死亡
+
+最终你我分离
+
+你死了
+留下尸体
+而我是那只不懂死亡的天鹅
+陪伴着
+试图唤醒沉睡的你
+
+夏天即将过去
+我将飞往异地
+在某个早晨
+我忽然明白
+你活着也是死了
+你死了也是活着
+
+没有牧师祝愿
+婚姻不过是转瞬之间
+
+你愿意嫁给眼前的这个男人么
+无论贫穷, 饥饿, 富有或者死亡
+			</textarea>
+		</div>
+	</section>
+
+	<section>
+		<header>
+			<h5>Notice</h5>
+		</header>
+		<div>
+<!-- paypal -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="7LAJUXRJB9R2A">
+<input type="hidden" name="on0" value="Donate:">
+<input type="hidden" name="currency_code" value="USD">
+<div>
+	<p>this is really a donate button (but in China, you know, paypal donate can't be done, so i put a buy now button. i'm not quite sure the difference) </p>
+	Donate:
+	<select name="os0">
+	<option value="a little =">a little = $3.00 USD</option>
+	<option value="more =">more = $12.00 USD</option>
+	<option value="a lot =">a lot = $36.00 USD</option>
+	</select>
+	<input type="image" src="https://www.paypalobjects.com/en_US/C2/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+</div>
+<div>
+</div>
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+			<p>
+				this script enable vi key on textarea(not for WYSIWYG online editor), <br />
+				develope under macpro/firefox/China, so keyboard/browser may change<br />
+			</p>
+			<ul>
+				<li>features
+					<ul>
+						<li>set debug on/off</li>
+						<li>set background color by yourself</li>
+						<li>auto bind to all textarea (wont bind to hidden -- display:none, cause WYSIWYG may use them)</li>
+					</ul>
+				</li>
+				<li>notice
+					<ul>
+						<li>still have few bugs in p and dd such commands</li>
+					</ul>
+				</li>
+				<li>v0.1 -- reimplement
+					<ul>
+						<li>Common: ESC, N</li>
+						<li>Left-right motions: [N]h,[N]l,0,^,[N]$</li>
+						<li>Up-down motions: [N]k,[N]j,[N]-,[N]+,[N]_,[N]G,[N]gg,[N]%</li>
+						<li>Inserting text: [N]a,[N]A,[N]i,[N]I,[N]o,[N]O</li>
+						<li>Deleting text: [N]x,[N]X,[N]dd,[N]D,[N]J</li>
+						<li>Copying and moving text: [N]p,[N]P(only work with Deleting text, still have some bugs)</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</section>
+</div>
+
+<script type="text/javascript" src="vikb.js"></script>
+<script type="text/javascript">
+(new vikb.controller).debug().run();
+</script>
+
+{% include footer.html %}
