@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8" />
-<title>Hello World!!!</title>
-<meta name="description" content="this is yarco's personal website" />
-<link href="{{site.url}}stylesheets/grid.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<link href="{{site.url}}stylesheets/text.css" media="screen, projection" rel="stylesheet" type="text/css" />
-</head>
-<body>
-
-<div id="bar">
-	<div class="left">
-		Lang ::= php:php | js:javascript | py:python | c:c | *:some-above | u:unknown
-	</div>
-	<div class="right">
-		State ::= i:initialized | p:in-process | t:trial-version | f:finished-version | s:stopped
-	</div>
-</div>
-
-<header>
-	<div id="logo">
-		<h2>Hello World!!!</h2>
-	</div>
-	<div id="job">
-		Top News: this guy try to get familiar with Qt... <br />
-		This guy decides to be a freelancer and wouldn't join any company anymore.<br />
-	</div>
-</header>
-
-<nav>
-	<ul>
-		<li><a href="{{site.url}}">home</a></li>
-		<li><a href="http://yco.bbish.net">tech blog</a></li>
-		<li><a href="http://www.linkedin.com/in/yarcowang">@linkedin</a></li>
-		<li><a href="https://github.com/yarcowang">@github</a></li>
-		<li><a href="http://www.freelancer.com/u/yarco.html">@freelancer</a></li>
-		<li><a href="http://yarco.diandian.com">感悟,动态,想法</a></li>
-	</ul>
-</nav>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hello World!!!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load('jquery', '1');
+		</script>
+		<!-- bootstrap -->
+		<link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="javascripts/bootstrap-tooltip.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.main a').tooltip({
+					placement: 'right'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top clearfix" id="bar">
+			<div class="pull-left">
+				Lang ::= php:php | js:javascript | py:python | c:c | *:some-above | u:unknown
+			</div>
+			<div class="pull-right">
+				State ::= i:initialized | p:in-process | t:trial-version | f:finished-version | s:stopped
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="span4" id="logo">
+						<h2>Hello World</h2>
+					</div>
+					<div class="span4">
+						<span class="icon-star"></span> Top News
+						<ul>
+							<li>2013-11-15 taste bootstrap on my site</li>
+						</ul>
+					</div>
+					<div class="span4">
+						<span class="icon-star"></span> My Top10 Wishlist 
+						<ul>
+							<li>kill GFW</li>
+							<li>online everywhere</li>
+							<li>macbook forever</li>
+							<li>a handsome Chinese sword</li>
+							<li>a place to enjoy sunshine and the ocean</li>
+							<li>a room i can sleep all day</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
