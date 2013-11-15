@@ -1,8 +1,5 @@
-auto: true
-server: true
 pygments: true
 permalink: none
 baseurl: /
-exclude: sass
-# url: http://localhost:4000/
+#url: http://localhost:4000/
 url: http://bbish.net/
