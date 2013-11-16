@@ -6825,6 +6825,10 @@ body header h2 {
   padding: 20px 0px;
 }
 /* line 34, ../sass/styles.scss */
+body #canvas {
+  display: block;
+}
+/* line 38, ../sass/styles.scss */
 body #other {
   -webkit-border-radius: 5px 5px;
   -moz-border-radius: 5px / 5px;
