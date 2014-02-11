@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Hello World!!!</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-		<script type="text/javascript">
-			google.load('jquery', '1');
-		</script>
+		<!-- jquery -->
+		<script src="{{site.url}}bower_components/jquery/jquery.min.js"></script>
 		<!-- bootstrap -->
-		<link href="{{site.url}}stylesheets/styles.css" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="{{site.url}}javascripts/bootstrap-tooltip.js"></script>
+		<script src="{{site.url}}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<link href="{{site.url}}bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<!-- font-awesome -->
+		<link href="{{site.url}}bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript">
 			$(function() {
 				$('.main a').tooltip({
@@ -21,43 +21,10 @@
 		</script>
 	</head>
 	<body>
-		<div class="navbar navbar-default navbar-fixed-top clearfix" id="bar">
-			<div class="pull-left">
-				Lang ::= php:php | js:javascript | py:python | c:c | *:some-above | u:unknown
-			</div>
-			<div class="pull-right">
-				State ::= i:initialized | p:in-process | t:trial-version | f:finished-version | s:stopped
-			</div>
-		</div>
 		<header>
-			<div class="container">
-				<div class="row">
-					<div class="span4" id="logo">
-						<h2>Hello World</h2>
-					</div>
-					<div class="span4">
-						<span class="icon-star"></span> Top News
-						<ul>
-							<li>2014-01-28 try <a href="http://laravel.com">laravel</a></li>
-							<li>2013-12-15 my Taichi\Framework <a href="https://taichi-yco.rhcloud.com">demo</a></li>
-							<li>2013-12-06 begin my tech blog <a href="http://yco.bbish.net">tech blog</a></li>
-							<li>2013-11-24 try to create <a href="https://github.com/WWGit/php-taichi-basic">composer php lib</a> in my spare time</li>
-							<li>2013-11-15 taste bootstrap on my site</li>
-						</ul>
-					</div>
-					<div class="span4">
-						<span class="icon-star"></span> My Top10 Wishlist 
-						<ul>
-							<li>kill GFW</li>
-							<li>online everywhere</li>
-							<li>macbook forever</li>
-							<li>a handsome Chinese sword</li>
-							<li>a seal</li>
-							<li>a place to enjoy sunshine and the ocean</li>
-							<li>a room i can sleep all day</li>
-							<li>the girl who i loved for over 10 years</li>
-						</ul>
-					</div>
+			<nav class="navbar navbar-default navbar-inverse">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Hello World</a>
 				</div>
-			</div>
+			</nav>
 		</header>
