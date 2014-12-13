@@ -8,66 +8,67 @@
 					<p class="help-block clearfix small">
 						<a href="http://www.linkedin.com/in/yarcowang">@linkedin</a>
 						<a href="https://github.com/yarcowang">@github</a><br />
-						Yes, it's me, Yarco.<br />
+						I'm Yarco, a senior php programmer.<br />
 						<br />
 						一个印章 - 一支毛笔 - 一根萧 - 一把剑<br />
 						a Seal - a Writing Brush - a Xiao - a Sword<br />
 					</p>
 
-					<div class="col-md-6">
-						<h4>World Stuff</h4>
-						<p class="help-block small">
-							STOPPED. No, i don't think it is the time for me to do something for the world...
-						</p>
-						<ul>
-							<li><a href="https://gist.github.com/yarcowang/8969090">suggestion of adding internal template engine into html5</a></li>
-							<li><a href="https://github.com/yarcowang/mdchart/">suggestion of adding chart into markdown syntax</a></li>
-						</ul>
+					<div class="col-md-12">
+						<h4>My America Dream</h4>
+						<h5>It is from god, not my personal stuff. If it is real, everyone gonna help me.<br />If one day it becomes true, it is because of the god.</h5>
+						<ol>
+							<li>go America and work</li>
+							<li>to be an American</li>
+							<li>be the first Chinese president of America <br />(just like Obama for black people)</li>
+							<li>lead American to beat Chinese government</li>
+							<li>make the two countries as one to construct a basic World Wide Government for all human on earth</li>
+							<li>death in peace</li>
+						</ol>
 					</div>
-					<div class="col-md-6">
-						<h4>Small Business Stuff</h4>
-						<p class="help-block small">
-							Money seems important to a mature man...
-						</p>
+
+					<div class="col-md-12">
+						<h4>Thinkings / Articles</h4>
 						<ul>
-							<li>Opencart Extensions:
-								<ul>
-									<li><a href="http://www.opencart.com/index.php?route=extension/extension/info&amp;extension_id=7836" data-toggle="tooltip" title="" data-original-title="india online payment method">Citrus Payment</a></li>
-									<li><a href="http://www.opencart.com/index.php?route=extension/extension/info&amp;extension_id=7972" data-toggle="tooltip" title="" data-original-title="india online payment method">ICICI PaySeal</a></li>
-								</ul>
-							</li>
+							{% for post in site.posts %}
+							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
 
 				<div class="col-md-6">
-					<h4>My Stuff</h4>
+					<h4>programming related stuff</h4>
 					<p class="help-block small">Lang ::= php:php | js:javascript | py:python | c:c | *:some-above | u:unknown<br />
 					State ::= i:initialized | p:in-process | t:trial-version | f:finished-version | s:stopped</p>
 					<div class="col-md-7">
-						<h5>Projects / in Labs / Exercises</h5>
+						<h4>Projects / Exercises</h4>
 						<ul>
 							<li>[py,f] shell: <a href="https://github.com/yarcowang/mytoolkit" data-toggle="tooltip" title="" data-original-title="random password tool etc">MyToolkit</a></li>
 							<li>[js,f] nodejs: <a href="https://github.com/yarcowang/seg-zhcn" data-toggle="tooltip" title="" data-original-title="simple Chinese segment method for nodejs">seg-zhcn</a></li>
 							<li>[js,f] nodejs: <a href="https://github.com/yarcowang/node-diff" data-toggle="tooltip" title="" data-original-title="line diff for nodejs">linediff</a></li>
+							<li>[php,f] <a href="http://www.opencart.com/index.php?route=extension/extension/info&amp;extension_id=7836" data-toggle="tooltip" title="" data-original-title="india online payment method">Citrus Payment</a></li>
+							<li>[php,f] <a href="http://www.opencart.com/index.php?route=extension/extension/info&amp;extension_id=7972" data-toggle="tooltip" title="" data-original-title="india online payment method">ICICI PaySeal</a></li>
 							<li>[js,p] chrome: <a href="https://github.com/yarcowang/chrome-tabsize" data-toggle="tooltip" title="" data-original-title="extensions for chrome or maybe other browsers">tabsize</a></li>
 							<li>[js,p] nodejs: <a href="https://npmjs.org/package/taichi-access" data-toggle="tooltip" title="" data-original-title="access control system for nodejs">taichi-access</a></li>
 							<li>[php,t] symfony: <a href="https://github.com/yarcowang/php-schema" data-toggle="tooltip" title="" data-original-title="a funny tool from my long time thinking">php-schema</a></li>
 							<li>[js,t] nodejs: <a href="https://github.com/yarcowang/node-watchd" data-toggle="tooltip" title="" data-original-title="a tool for watching files and if change then execute commands">node-watchd</a></li>
 							<li>[*,t] xdebug: <a href="http://github.com/yarcowang/xdebug-clients" data-toggle="tooltip" title="" data-original-title="xdebug client">XDebug Clients</a></li>
-							<li>site: <a href="http://langs.mobi/" data-toggle="tooltip" title="" data-original-title="a site for getting api help, special for software">Langs.mobi</a></li>
 							<li>[js,i] browser: <a href="vikb/" data-toggle="tooltip" title="" data-original-title="html textarea control with vi key binding">vi key binding</a></li>
 							<li>[php,s] php: <a href="http://github.com/yarcowang/icore" data-toggle="tooltip" title="" data-original-title="a half done php framework">iCore</a></li>
 							<li>[php,t] drupal: <a href="http://github.com/yarcowang/Drupal-JSON-Views-Module-" data-toggle="tooltip" title="" data-original-title="a drupal views json backend, that enable remote json resource can be used in a view">Views Json Backend</a></li>
-							<li>[js,f] exercise: <a href="https://gist.github.com/4154891" data-toggle="tooltip" title="" data-original-title="数值计算">二分法实现</a></li>
-							<li>[js,f] exercise: <a href="https://gist.github.com/4154930" data-toggle="tooltip" title="" data-original-title="数值计算">牛顿法实现</a></li>
-							<li>[js,f] exercise: <a href="https://gist.github.com/4154963" data-toggle="tooltip" title="" data-original-title="图形图像">RGB转灰度</a></li>
-							<li>[js,f] exercise: <a href="https://gist.github.com/4154983" data-toggle="tooltip" title="" data-original-title="图形图像">散点的边界检查</a> <a href="files/1.jpg">样图</a></li>
 						</ul>
 					</div>
 
 					<div class="col-md-5">
-						<h5>Links / Other</h5>
+						<h4>Sites <small>under my name</small></h4>
+						<ul>
+							<li><a href="http://langs.mobi/" data-toggle="tooltip" title="" data-original-title="a site for getting api help, special for software">langs.mobi</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-5">
+						<h4>Links / Other</h4>
 						<ul>
 							<li>Common Coding Style:
 								<ul>
