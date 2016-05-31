@@ -1,4 +1,4 @@
-pygments: true
+highlighter: rouge
 permalink: none
 baseurl: /
 #url: http://localhost:4000/
