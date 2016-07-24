@@ -1,5 +1,5 @@
 highlighter: rouge
 permalink: none
 baseurl: /
-#url: http://localhost:4000/
+#url: http://devel:4000/
 url: http://www.bbish.net/
