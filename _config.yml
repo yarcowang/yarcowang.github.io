@@ -1,5 +1,6 @@
 highlighter: rouge
 permalink: none
 baseurl: /
-#url: http://devel:4000/
-url: http://www.bbish.net/
+#host: 127.0.0.1
+#port: 34000
+url: https://www.bbish.net/
