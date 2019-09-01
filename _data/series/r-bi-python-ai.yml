@@ -1,0 +1,36 @@
+- id: ai-learning-on-line-resources
+  title: 'AI: 机器学习 等在线资源'
+  ontop: true
+
+- id: statistics-books
+  title: '统计书籍列表(链接)'
+  ontop: true
+
+- id: python-tutorial-links
+  title: 'Python Tutorial (教程links)'
+  ontop: true
+
+- id: statistics-terms
+  title: '统计学中常用专用名词中英对照(碰到就放)'
+  ontop: true
+
+- id: note-deeplearning-pytorch
+  title: '笔记: 深度学习与PyTorch入门'
+
+- id: note-all-of-statistics
+  title: 'Notes: All of Statistics -- a concise course in statistical inference'
+
+- id: note-machine-learning-in-action
+  title: '笔记: 机器学习实战'
+
+- id: monty-hall-problem
+  title: '三门问题的 R 随机模拟 (增强版)'
+
+- id: note-grokking_algorithms
+  title: '笔记: 算法图解：像小说一样有趣的算法入门书 (By Aditya Bhargava)'
+
+- id: note-handle-missing-data
+  title: '笔记: 处理缺失值'
+
+- id: note-deep-learning-from-scratch
+  title: '笔记: 深度学习入门: 基于Python的理论与实践 (斋藤康毅)'

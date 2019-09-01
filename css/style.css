@@ -1,0 +1,12 @@
+body {
+    font-size: .78rem;
+}
+
+div.highlight {
+    border-radius: .7rem;
+}
+
+pre.highlight {
+    padding: .7rem;
+    border-radius: .7rem;
+}

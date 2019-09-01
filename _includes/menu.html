@@ -1,0 +1,12 @@
+<div class="col-2 mt-3">
+    <h5>Menu</h5>
+    {% for t in site.data.categories %}
+    {% assign category = t[1] %}
+    {{ category.title }}
+    <ul class="list-unstyled">
+        {% for subcat in category.subcategories %}
+        <li><a href="{{ site.url }}/category/{{ subcat.category }}">+ {{ subcat.title }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>

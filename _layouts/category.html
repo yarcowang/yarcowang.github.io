@@ -1,0 +1,64 @@
+{% include header.html %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {% for t in site.data.categories %}
+            {% assign category = t[1] %}
+            {% for subcat in category.subcategories %}
+            {% if subcat.category == page.category %}
+            {% assign curr_category = category %}
+            {% assign subcategory = subcat %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ site.url }}">Home</a></li>
+                    <li class="breadcrumb-item">{{ curr_category.title }}</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ subcategory.title }}</li>
+                </ol>
+            </nav>
+
+            <div class="row mb-3">
+                {% include menu.html %}
+
+                <div class="col-9 card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            {{ subcategory.title }}
+                        </h5>
+                        <div class="card-text">
+                            <table class="table">
+                                <tbody>
+                                {% assign series-data = site.data.series[subcategory.category] %}
+                                {% for item in series-data %}
+                                <tr>
+                                    {% assign posts-data = site.posts | where: 'series', item.id %}
+                                    {% for post in posts-data %}
+                                    {% assign curr_post = post %}
+                                    {% endfor %}
+                                    <td>
+                                        <span class="text-muted"><i class="far fa-clock"></i> {{ curr_post.date | date_to_rfc822 }}</span><br />
+                                        {% if item.ontop == true %}
+                                        <i class="fas fa-level-up-alt"></i>
+                                        {% endif %}
+                                        <a href="{{ curr_post.url }}">{{ item.title }}</a>
+                                        ({{ posts-data.size }} posts)
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

@@ -1,0 +1,16 @@
+title: WEB TECHNOLOGY
+subcategories:
+  - title: R/BI & Python/AI
+    description: R统计相关, 商业数据分析, 机器学习, AI etc...
+    category: r-bi-python-ai
+
+  - title: Dart & Flutter
+    category: dart-flutter
+
+  - title: Js & NodeJs & UI & PHP
+    description: Javascript相关, HTML5也算, 还有一些PHP(可能性/少量深度的)
+    category: js-nodejs-ui-php
+
+  - title: C/C++, 硬件
+    description: c语言或别的什么(ASM?) 或硬件/嵌入设备/极客相关 或 Leetcode刷题
+    category: c-more

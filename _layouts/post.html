@@ -1,0 +1,106 @@
+{% include header.html %}
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col">
+            {% for t in site.data.categories %}
+            {% assign category = t[1] %}
+            {% for subcat in category.subcategories %}
+            {% if subcat.category == page.category %}
+            {% assign curr_category = category.title %}
+            {% assign subcategory = subcat %}
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ site.url }}">Home</a></li>
+                    <li class="breadcrumb-item">{{ curr_category }}</li>
+                    <li class="breadcrumb-item"><a href="{{ site.url }}/category/{{ subcategory.category }}">{{ subcategory.title }}</a></li>
+                    <li class="breadcrumb-item">
+                        {% assign curr_series = site.data.series[subcategory.category] | where: 'id', page.series %}
+                        {{ curr_series[0].title }}
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+                </ol>
+            </nav>
+
+            <div class="row mb-3">
+                {% include menu.html %}
+
+                <div class="col-9 card">
+                <div class="card-body">
+                    <div class="card float-right">
+                        <div class="card-body">
+                            {{ curr_series[0].title }}
+                            <ol class="pl-3">
+                                {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
+                                {% for post in series-posts %}
+                                <li>
+                                    {% if post.url == page.url %}
+                                    <strong>{{ post.title }}</strong>
+                                    {% else %}
+                                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ol>
+                        </div>
+                    </div>
+
+                    <h5 class="card-title">
+                        {{ page.title }}
+                    </h5>
+                    <p class="card-text text-muted">Last updated by {{ page.author }} on {{ page.date | date_to_rfc822 }}</p>
+
+                    {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
+                    {% for post in series-posts %}
+                    {% if post.url == page.url %}
+                    {% assign prev_post_index = forloop.index | minus: 1 %}
+                    {% assign curr_post_index = forloop.index %}
+                    {% assign next_post_index = forloop.index | plus: 1 %}
+                    {% endif %}
+                    {% endfor %}
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            {% for post in series-posts %}
+                            {% if prev_post_index == forloop.index %}
+                            <li class="mr-5"><a class="card-link" rel="prev" href="{{ site.baseurl }}{{ post.url }}"><i class="fas fa-arrow-circle-left"></i> {{ prev_post_index }}. {{ post.title }}</a></li>
+                            {% endif %}
+                            {% if next_post_index == forloop.index %}
+                            <li><a class="card-link" rel="next" href="{{ site.baseurl }}{{ post.url }}">{{ next_post_index }}. {{ post.title }} <i class="fas fa-arrow-circle-right"></i></a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    <div class="card-text">
+                        {{ content }}
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            {% for post in series-posts %}
+                            {% if prev_post_index == forloop.index %}
+                            <li class="mr-5"><a class="card-link" rel="prev" href="{{ site.baseurl }}{{ post.url }}"><i class="fas fa-arrow-circle-left"></i> {{ prev_post_index }}. {{ post.title }}</a></li>
+                            {% endif %}
+                            {% if next_post_index == forloop.index %}
+                            <li><a class="card-link" rel="next" href="{{ site.baseurl }}{{ post.url }}">{{ next_post_index }}. {{ post.title }} <i class="fas fa-arrow-circle-right"></i></a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--{% include footer-disqus.html %}-->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
