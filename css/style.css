@@ -9,4 +9,5 @@ div.highlight {
 pre.highlight {
     padding: .7rem;
     border-radius: .7rem;
+    white-space: pre-wrap;
 }
