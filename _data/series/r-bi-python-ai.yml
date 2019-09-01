@@ -26,7 +26,7 @@
 - id: monty-hall-problem
   title: '三门问题的 R 随机模拟 (增强版)'
 
-- id: note-grokking_algorithms
+- id: note-grokking-algorithms
   title: '笔记: 算法图解：像小说一样有趣的算法入门书 (By Aditya Bhargava)'
 
 - id: note-handle-missing-data
