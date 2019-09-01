@@ -2,7 +2,7 @@ title: Long Long ago
 email: yarco.wang@gmail.com
 
 baseurl: ""
-url: https://www.bbish.net/
+url: https://www.bbish.net
 
 highlighter: rouge
 permalink: /posts/:year:month:day/:title:output_ext
