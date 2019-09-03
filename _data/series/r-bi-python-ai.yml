@@ -14,6 +14,9 @@
   title: '统计学中常用专用名词中英对照(碰到就放)'
   ontop: true
 
+- id: note-r-in-action
+  title: '笔记: R语言实战'
+
 - id: note-deeplearning-pytorch
   title: '笔记: 深度学习与PyTorch入门'
 
