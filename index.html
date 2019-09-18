@@ -18,9 +18,10 @@ layout: home
                                 I have a wild range interestings in programming languages, including:
                                 nodejs, <b>python, R</b>. <br />
                                 I think <b>BI & AI</b> is something I'll care about in future.<br />
+																And also, he treats <b>Dart</b> as PHP's successor.<br />
                                 <br />
                                 He didn't finish his school, but he's continuously learning.<br />
-                                Wish have a good chance to work for you.
+                                Hola! Nice to meet you!
                             </p>
                         </div>
                     </div>
@@ -30,26 +31,33 @@ layout: home
             <div class="card mb-3" style="max-width: 520px;">
                 <div class="row no-gutters">
                         <div class="card-body">
-                            <h5 class="card-title">Latest News</h5>
-                            <p class="card-text">
-			     <ul class="">
-				     <li>
-				    Migration from my <a href="https://bbs.bbish.net">bbs posts</a> to github pages...
-				     </li>
-				     <li>
-				    He's open to be hired, including remote &amp; outside China. Visit his <a href="https://linkedin.com/in/yarcowang">resume</a> in Linkedin.
-				     </li>
-			     </ul>
-                            </p>
+                            <h5 class="card-title">Latest Posts</h5>
+														<div class="card-text">
+																<ul class="list-unstyled">
+																		{% for post in site.posts limit:7 %}
+																		<li>{{ post.date | date_to_string }} <a href="{{ site.url }}{{ post.url }}"> {{ post.title }}</a> </li>
+																		{% endfor %}
+																</ul>
+														</div>
                         </div>
                 </div>
             </div>
         </div>
 
         <div class="col">
+						<div class="card mb-3">
+						    <div class="card-body">
+								    <h5 class="card-title">iNews</h5>
+									  <p class="card-text">
+			     <ul class="">
+				     <li>The Dart Language seems great! And I think it will replace PHP in future.</li>
+			     </ul>
+                    </p>
+								</div>
+						</div>
             <div class="card mb-3">
                 <div class="card-body">
-                    <h5 class="card-title">Articles & Posts</h5>
+                    <h5 class="card-title">Categories</h5>
                     <div class="card-text">
                         <ul class="list-unstyled">
                             {% for t in site.data.categories %}
