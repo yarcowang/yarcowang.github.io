@@ -4,24 +4,26 @@ series: note-grokking-algorithms
 
 layout: post 
 title:  "算法简介"
-date:   2019-01-07 19:44:25 +0800
+date:   2020-06-23 09:17:48 +0800
 author: Yarco
 ---
 
-Code Path: [https://github.com/egonschiele/grokking_algorithms](https://github.com/egonschiele/grokking_algorithms)
-
-本贴知识点概览:
-* 算法思想
-* 二分查找
-* 数组和链表
-* 选择排序
+分享地址: [https://gitbook.cn/gitchat/geekbook/5a9cb0c0a80c047e76c23c4f](https://gitbook.cn/gitchat/geekbook/5a9cb0c0a80c047e76c23c4f)  
+代码库: [https://github.com/egonschiele/grokking_algorithms](https://github.com/egonschiele/grokking_algorithms)
 
 ### 算法简介
-(思考) 参考函数 y = f(x), 算法的本质是考虑/考察/找到合理的 f. 通过人为的方式可以清晰的分解问题找到 f, 那么 f 就是一个过程(简单的步骤, 像介绍算法时我们所最初接触到的一样, steps, 或是方法/函数); 如果问题可以归结为循环+较小规模的问题, 那么可以用递推/递归, 这应该是个分治问题; 如果需要辅助数据动态支持找到解决方案, 可以称这个 f 为 动态规划; 如果没有非常显示的处理办法并且若引入 x1 会影响到全局的解法 f (即有可能是NPC问题), 那么就可能需要通过构造数据组(深度学习)来解 f, 称为人工智能. 这些都属于相对精确有效的寻找解法的思想, 相对而言贪婪法与穷举法就显得暴力.
+思考函数`y = f(x)`, 算法的本质是考察试图找到合理的`f`, 使得从已知`x`可以得到恰当的`y`.
+
+* 如果问题比较简单, 通过人为的方式可以清晰的分解得到几个步骤, 从而获得`y`, 像最初在介绍算法时我们遇到的那样(做菜过程);
+* 如果问题可以分解为较小规模的独立问题, 那么就是分治问题, 通常可以通过递推/递归解决; 
+* 如果问题被分解为子问题时, 子问题需要依赖一组状态信息, 可以称这个`f`为动态规划; 
+* 如果没有非常显示的处理办法并且引入x1, 会影响到全局的解法`f` (即有可能是NPC问题), 那么就可能需要通过构造数据组(深度学习)来解`f`,称为人工智能. 
+
+这些都属于相对精确有效的寻找解法的思想, 相对而言`贪婪法`与`穷举法`就显得暴力.
 
 ####　二分查找
 针对的是有次序的静态序列. 有次序意味着有大小, 意味着可基于大小做排除.  
-(举个例子: 分词中的查字典 [https://www.npmjs.com/package/seg-zhcn](https://www.npmjs.com/package/seg-zhcn) 多年前js写的分词 哈哈 这都能让我找出来~)
+(举个例子: 分词中的查字典 [https://www.npmjs.com/package/seg-zhcn](https://www.npmjs.com/package/seg-zhcn) 多年前js写的分词)
 
 c语言实现（我自己~ 当练习c, 感觉这里的难度是边界不好掌握, 参考: https://stackoverflow.com/questions/39221303/binary-search-algorithm-implementations?rq=1)
 (我这里写  int right = strlen(s); 然后循环用小于 while (left < right) { 发现也是对的)
