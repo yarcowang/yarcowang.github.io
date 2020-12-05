@@ -15,27 +15,13 @@ layout: home
                             <h5 class="card-title">About Me</h5>
                             <p class="card-text">
                                 Hi, I'm Yarco, a <b>PHP</b> developer from China.<br />
-                                Here is my personal website.<br />
-				    
+                                Here is my personal website:<br />
+																<ul>
+																	<li><a href="http://ru.bbish.net">代码回收站(Forum about programming in Chinese)</a></li>
+																</ul>
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="card mb-3" style="max-width: 520px;">
-                <div class="row no-gutters">
-                        <div class="card-body">
-                            <h5 class="card-title">Latest Posts</h5>
-														<div class="card-text">
-																<ul class="list-unstyled">
-																		{% for post in site.posts limit:7 %}
-																		<li>{{ post.date | date_to_string }} <a href="{{ site.url }}{{ post.url }}"> {{ post.title }}</a> </li>
-																		{% endfor %}
-																</ul>
-																<a class="card-link" href="{{ site.url }}/list.html">More Posts</a>
-														</div>
-                        </div>
                 </div>
             </div>
         </div>
@@ -46,34 +32,12 @@ layout: home
 								    <h5 class="card-title">iNews</h5>
 									  <p class="card-text">
 			     <ul class="">
-					   <li>2020-12-01 Rust seems good. Go back web stuff. But enterprise softwares do make sense.</li>
-					   <li>2020-03-08 He's now focusing on ERP/OA -- Enterprise related softwares.</li>
+					   <li>2020-12-01 Rust seems good, also.</li>
 					   <li>2020-02-08 <a href="{{ site.url }}/coronavirus-20200208.html">Coronavirus in China & Solution suggestion.</a></li>
-				     <li>The Dart Language seems great! And I think it will replace PHP in future.</li>
 			     </ul>
                     </p>
 								</div>
 						</div>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Categories</h5>
-                    <div class="card-text">
-                        <ul class="list-unstyled">
-                            {% for t in site.data.categories %}
-                            {% assign category = t[1] %}
-                            <li class="mb-3">
-                                {{ category.title }}
-                                <ul>
-                                    {% for subcat in category.subcategories %}
-                                    <li><a href="{{ site.url }}/category/{{ subcat.category }}">{{ subcat.title }}</a><br /><span class="text-muted">{{ subcat.description }}</span></li>
-                                    {% endfor %}
-                                </ul>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
