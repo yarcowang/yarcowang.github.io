@@ -52,9 +52,7 @@
                     <h5 class="card-title">
                         {{ page.title }}
                     </h5>
-                    <p class="card-text text-muted">Last updated by {{ page.author }} on {{ page.date | date_to_rfc822 }}</p>
-                    
-                    
+                    <p class="card-text text-muted">Created by {{ page.author }} on {{ page.date | date_to_rfc822 }}</p>
 
                     {% assign series-posts = site.posts | reverse | where: 'series', page.series %}
                     {% for post in series-posts %}
@@ -77,7 +75,7 @@
                         </ul>
                     </nav>
                     <div class="card-text">
-                        ##### ֪ʶ��
+                        ##### 知识点
                         {% include toc.html html=content %}
                         {{ content }}
                     </div>
@@ -100,7 +98,7 @@
     </div>
 </div>
 
-{% include footer-disqus.html %}
+<!--{% include footer-disqus.html %}-->
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
