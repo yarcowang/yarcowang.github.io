@@ -2,44 +2,46 @@
 layout: home
 ---
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col">
-            <div class="card mb-3" style="max-width: 520px;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="/files/myself.jpg" class="card-img" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">About Me</h5>
-                            <p class="card-text">
-                                Hi, I'm Yarco, a <b>PHP</b> developer from China.<br />
-                                This is my personal website.<br />
-																<ul>
-																	<li>My BBS: <a href="http://ru.bbish.net">代码回收站(Forum about programming in Chinese)</a></li>
-																</ul>
-                            </p>
-                        </div>
-                    </div>
+        <div class="col-sm-12 col-md-4 mb-3" style="padding: 0;border:1px solid rgba(0,0,0,.125);border-radius: .25rem">
+            <div class="clearfix">
+                <img src="/files/myself.jpg" style="float:left;max-width: 8rem;margin-right:1rem" alt="...">
+                <h5>About Me</h5>
+                <p>
+                    Hi, I'm Yarco, a <b>PHP</b> developer from China.<br />
+                    This is my personal website.<br />
+                    <ul class="list-unstyled">
+                        <li>My Resume: (PDFs) En 中文, (Link) Linkedin Profile</li>
+                        <li>My BBS: <a href="http://ru.bbish.net">代码回收站(Forum about programming in Chinese)</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="row mt-2">
+                <address class="col-9">
+                    <abbr title="Email">E:</abbr> yarco dot wang at gmail dot com<br />
+                    <abbr title="Address">A:</abbr> Shanghai, China<br />
+                    <abbr title="Tools">T:</abbr> Jetbrains IDE with IdeaVim Plugin<br />
+                </address>
+                <div class="col-3 clearfix">
+                    <img src="/files/dao.png" style="float:right;max-width:4rem"/>
                 </div>
             </div>
         </div>
 
-        <div class="col">
-						<div class="card mb-3">
-						    <div class="card-body">
-								    <h5 class="card-title">iNews</h5>
-									  <p class="card-text">
-			     <ul class="">
-					   <li>2021-04-24 Back to Shanghai.</li>
-					   <li>2020-12-01 Rust seems good, also.</li>
-					   <li>2020-02-08 <a href="{{ site.url }}/coronavirus-20200208.html">Coronavirus in China & Solution suggestion.</a></li>
-			     </ul>
-                    </p>
-								</div>
-						</div>
+        <div class="col-sm-12 col-md-4 card mb-3" style="border:none">
+            <div class="card-body">
+                <h5 class="card-title">iNews</h5>
+                <p class="card-text">
+                <ul class="">
+                    <li>2021-04-24 Back to Shanghai.</li>
+                    <li>2020-12-01 Rust seems good, also.</li>
+                    <li>2020-02-08 <a href="{{ site.url }}/coronavirus-20200208.html">Coronavirus in China & Solution suggestion.</a></li>
+                </ul>
+                </p>
+            </div>
         </div>
-    </div>
 
+    </div>
 </div>
