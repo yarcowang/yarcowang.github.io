@@ -7,12 +7,11 @@ title:  "k-近邻算法(kNN)概述"
 date:   2019-03-17 17:12:20 +0800
 author: Yarco
 ---
-
 ### k-近邻算法(kNN)概述
+简单地说, k近邻算法采用测量不同特征值之间的距离方法进行分类.
 
 #### 准备: 使用Python导入数据
-(plot图2.2 k近邻算法: 带有4个数据点的简单例子 -- 简单数据的代码)
-数据:
+带有4个数据点的简单例子(数据):
 ```
 [[1.  1.1]
  [1.  1. ]
@@ -20,6 +19,7 @@ author: Yarco
  [0.  0.1]]
 ```
 
+图示代码:
 ```python
 import matplotlib.pyplot as plt
 import knn
@@ -39,12 +39,10 @@ kNN.py 实现代码(注: 和原书不一样)
 import numpy as np
 from collections import Counter
 
-
 def load_dataset():
     data = np.array([[1.0, 1.1], [1.0, 1.0], [0, 0], [0, 0.1]])
     labels = ['A', 'A', 'B', 'B']
     return data, labels
-
 
 def distance0(data, target):
     return np.sqrt(np.sum((data - target)**2, axis=1))
@@ -76,3 +74,4 @@ print(knn.predict0((0.8, 0.4), data, labels, 3))
 但我们可以看到从 sqrt(dX^2+dY^2)到 aX + bY (权重信息/dot product)的衡量标准的过度.
 
 
+Yarco / Last updated on Mon Dec 16 21:52:01 CST 2019
