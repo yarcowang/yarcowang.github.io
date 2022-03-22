@@ -1,3 +1,3 @@
 This is yarco wang's personal website.
 
-http://bbish.net
+http://www.bbish.net
