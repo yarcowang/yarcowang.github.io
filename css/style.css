@@ -616,6 +616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-position: inside;
 }
 
+.list-outside {
+  list-style-position: outside;
+}
+
 .list-square {
   list-style-type: square;
 }
@@ -899,6 +903,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .\32xl\:-rotate-2 {
     --tw-rotate: -2deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .\32xl\:rotate-1 {
+    --tw-rotate: 1deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
