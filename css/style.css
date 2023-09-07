@@ -616,10 +616,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-position: inside;
 }
 
-.list-outside {
-  list-style-position: outside;
-}
-
 .list-square {
   list-style-type: square;
 }
