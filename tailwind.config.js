@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['index.html', 'topics/**/*.{html,js}'],
+  content: ['index.html', 'ct.html', 'bp.html', 'topics/**/*.{html,js}'],
   theme: {
     extend: {
       listStyleType: {
