@@ -4,48 +4,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Long Long ago - Yarco's personal website</title>
+    <title>Long Long ago -- Yarco's personal website</title>
 </head>
 <body>
 
-<nav class="w-full p-2 font-bold text-white bg-orange-600 align-middle text-center md:text-left">
-    <a href="https://mixable.blog/hello-world-in-74-natural-languages/" class="underline">你好,世界!</a> -
-    Hello World! - ¡Hola, Mundo! - Hallo, Welt!
+<nav class="w-full p-2 font-bold text-white bg-orange-600 text-left">
+    <a href="https://mixable.blog/hello-world-in-74-natural-languages/" class="underline">你好,世界!</a>
+    - Hello World! <span class="hidden md:inline">- こんにちは世界！- ¡Hola, Mundo! - Hallo, Welt!</span>
 </nav>
 
-<div class="m-3 flex flex-row flex-start">
+<div class="flex flex-row m-3 text-sm">
     <div class="basis-1/2 md:basis-1/4">
+
         <!-- introduction -->
         <div class="text-gray-700">
-            <img class="rounded-md mr-2 w-20 shadow float-left" src="/files/myself.jpg" />
-            <h2 class="font-bold">关于我 / About Me</h2>
-            <p>Hi, I'm Yarco, a PHP developer from China. </p>
-            <p>This is my personal website.</p>
+            <img class="rounded-md mr-2 w-20 shadow float-left" src="/files/myself.jpg" alt="My Photo"/>
+            <h2 class="font-bold">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                </svg>
+                关于我 / About Me
+            </h2>
+            <p>Hello, I am a PHP<sup>(max=5)</sup> developer from China. <br />
+                And I also know NodeJs<sup>(3.8)</sup> and some Python<sup>(2.6)</sup> etc.</p>
+            <br />
+            <p class="font-bold">This is my personal website.</p>
+            <br />
             <p class="clear-left">If you want to know more about me, check my resume below:</p>
             <ul class="list-square list-inside">
-                <li><a href="/files/resume/resume_en.pdf" target="_blank" class="underline">En, PDF</a></li>
-                <li><a href="/files/resume/resume_cn.pdf" target="_blank" class="underline">中文, PDF</a></li>
+                <li><a href="/files/resume/resume_cn.pdf" target="_blank" class="underline">中文</a></li>
+                <li><a href="/files/resume/resume_en.pdf" target="_blank" class="underline">En</a></li>
             </ul>
             <p>You can also visit my <a href="https://www.linkedin.com/in/yarcowang/" class="underline">linkedin profile</a>.</p>
-            <p class="m-5 text-center italic">I'm open to the world!</p>
-			<p class="font-bold">Accept remote working also in other programming fields:</p>
+            <p class="mx-auto my-5 text-center align-bottom italic leading-10 bg-zinc-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z" />
+                </svg>
+                I'm open to the world! Good Luck!
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.871c1.355 0 2.697.056 4.024.166C17.155 8.51 18 9.473 18 10.608v2.513M15 8.25v-1.5m-6 1.5v-1.5m12 9.75-1.5.75a3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0 3.354 3.354 0 0 0-3 0 3.354 3.354 0 0 1-3 0L3 16.5m15-3.379a48.474 48.474 0 0 0-6-.371c-2.032 0-4.034.126-6 .371m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.169c0 .621-.504 1.125-1.125 1.125H4.125A1.125 1.125 0 0 1 3 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 0 1 6 13.12M12.265 3.11a.375.375 0 1 1-.53 0L12 2.845l.265.265Zm-3 0a.375.375 0 1 1-.53 0L9 2.845l.265.265Zm6 0a.375.375 0 1 1-.53 0L15 2.845l.265.265Z" />
+                </svg>
+            </p>
+			<p class="font-bold">Accept remote working!</p>
 			<ul class="list-square list-inside">
-				<li>NodeJs: <a href="files/ev/QUIZ_reservation.stage01.docx" class="underline">stage-01</a></li>
-                <li>More... <a href="ct.html" target="_blank" class="underline">Online Certificates</a></li>
+				<li>NodeJs exercises: <a href="files/ev/QUIZ_reservation.stage01.docx" class="underline">01</a></li>
+                <li><a href="ct.html" target="_blank" class="underline">Online Certificates</a></li>
 			</ul>
         </div>
 
         <!-- extra -->
-        <div class="mt-3 p-3 md:p-3.5 text-black text-sm border border-dashed border-orange-600 rounded-md">
-            <h2 class="font-bold">额外的 / Extra Information</h2>
-            <div class="flex justify-between">
-                <address>
-                    <abbr title="Email">E:</abbr> yarco dot wang at gmail dot com<br />
-                    <abbr title="Location">L:</abbr> Shanghai / Ningbo, China<br />
-                    <abbr title="Tools">T:</abbr> Jetbrains IDEs with IdeaVim, Gitflow...<br />
-                </address>
-                <img src="/files/dao.png" />
+        <div class="flex flex-row justify-between mt-3 p-3 md:p-3.5 border border-dashed border-orange-600 rounded-md">
+            <div>
+                <h2 class="font-bold">额外的 / Extra Information</h2>
+                <div class="flex justify-between">
+                    <address>
+                        <abbr title="Email">E:</abbr> yarco dot w at gmail dot com<br />
+                        <abbr title="Location">L:</abbr> Shanghai or Ningbo, China<br />
+                    </address>
+                </div>
             </div>
+            <img width="32" height="63" src="/files/dao.png" alt="image of Yarco's signature"/>
         </div>
 
         <!-- news -->
@@ -82,40 +100,75 @@
         </div>
     </div>
 
-    <div class="basis-1/2 md:basis-3/4 flex flex-row flex-wrap-reverse flex-row-reverse">
-        <!-- topic -->
-
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:-rotate-6">
-            <h2 class="font-bold">开发者联盟 / World Wide Developer Association</h2>
+    <div class="basis-1/2 md:basis-3/4 flex flex-row flex-wrap gap-4 justify-evenly">
+        <!-- template -->
+        <div class="basis-1/2 p-3 border border-solid border-orange-600 rounded-md 2xl:-rotate-6 hidden">
+            <h2 class="font-bold">Template: Topic</h2>
             <div class="text-sm text-gray-500">
-                Trying to touch the world! ;) <sub>2022-06-18</sub>
+                Description... <sub>9999-99-99</sub>
+            </div>
+            <div class="text-black">
+                Details...
+            </div>
+        </div>
+
+        <!-- 编译类 -->
+        <div class="basis-2/5 p-3 border border-solid border-orange-600 rounded-md">
+            <h2 class="font-bold">编译类软件 / C++ Apps</h2>
+            <div class="text-sm text-gray-500">
+                Some old time projects from 201x (I'm willing to improve someday) are also listed here~ <sub>2023-02-20</sub>
             </div>
             <div class="text-black mb-3">
                 <ul class="list-inside list-disc">
                     <li>
-                        <a href="https://github.com/world-Wide-Developer-Association" class="underline">开发者联盟 / World Wide Developer Association</a>
+                        <a href="https://github.com/yarcowang/JsonAnalyser" class="underline">Json Analyser</a>
+                        <sub>(C++/Qt, 2016, dev version)</sub>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="font-bold">游戏 / Game</h2>
+            <div class="text-sm text-gray-500">
+                He founds <a href="https://www.cocos.com/" target="_blank" class="underline">Cocos Creator</a> is really funny, and try to make small games by it.<sub>2023-10-28 after choosing godot on 02-20</sub>
+            </div>
+            <div class="text-black mb-3">
+                <ul class="list-inside list-disc">
+                    <li><a href="https://digital-riot.apps.sun-tech.co/" class="line-through">Digital Riot / 数字崛起</a> <sub>(2023, mini-game "数字崛起" by cocos-creator)</sub></li>
+                </ul>
+            </div>
+
+            <h2 class="font-bold">Rust 桌面 / Rust Desktop</h2>
+            <div class="text-sm text-gray-500">
+                I'm putting Rust topics here, and also Tauri apps... <sub>2023-02-30</sub>
+            </div>
+            <div class="text-black">
+                <ul class="list-inside list-disc">
+                    <li>
+                        <a href="https://github.com/yarcowang/rfc-reader.tauri" class="underline">RFC Reader</a>
+                        <sub>(Tauri/ReactJs, 2023, prod)</sub>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:rotate-3">
-            <h2 class="font-bold">前端应用 / Web Apps</h2>
+        <!-- 前端相关 -->
+        <div class="basis-2/5 p-3 border border-solid border-orange-600 rounded-md">
+            <h2 class="font-bold">Web前端技术 / Web Apps</h2>
             <div class="text-sm text-gray-500">
                 Sometimes I also make chrome extensions to easy my life~ <sub>2022-06-09</sub>
             </div>
             <div class="text-black mb-3">
                 <ul class="list-inside list-disc">
                     <li>
-                        <a href="https://chromewebstore.google.com/detail/badsite-indicator/ggbonaibopkfgmjihknglpnfomfcgkop?hl=en&authuser=0">Badsite Indicator</a> <sub>(Apr 8, 2024) chrome extension</sub>
+                        <a href="https://chromewebstore.google.com/detail/badsite-indicator/ggbonaibopkfgmjihknglpnfomfcgkop?hl=en&authuser=0" class="line-through">Badsite Indicator</a> <sub>(Apr 8, 2024) chrome extension</sub>
                     </li>
                     <li>
                         <a href="./exp-smt" class="underline">SMT Tookit</a> <sub>(JS/Vue, 2019) web app</sub>
                     </li>
                     <li>
-                        <a href="https://chrome.google.com/webstore/detail/rust-doc-pretty/poigiclnbafilkcodmaecekodciphmic?hl=en&authuser=0" class="underline">Rust Doc Pretty</a> <sub>chrome extension</sub>
+                        <a href="https://chrome.google.com/webstore/detail/rust-doc-pretty/poigiclnbafilkcodmaecekodciphmic?hl=en&authuser=0" class="line-through">Rust Doc Pretty</a> <sub>chrome extension</sub>
                     </li>
-                    <li><a href="https://chrome.google.com/webstore/detail/github-buddy-yeah-a-dog/obacpeecfhbgognjpnponfblnhpnepae?hl=en&authuser=0" class="underline">Github Buddy</a> <sub>chrome extension</sub></li>
+                    <li><a href="https://chrome.google.com/webstore/detail/github-buddy-yeah-a-dog/obacpeecfhbgognjpnponfblnhpnepae?hl=en&authuser=0" class="line-through">Github Buddy</a> <sub>chrome extension</sub></li>
                 </ul>
             </div>
 
@@ -142,53 +195,13 @@
             </div>
         </div>
 
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:-rotate-6">
-            <h2 class="font-bold">游戏 / Game</h2>
-            <div class="text-sm text-gray-500">
-                He founds <a href="https://www.cocos.com/" target="_blank" class="underline">Cocos Creator</a> is really funny, and try to make small games by it.<sub>2023-10-28 after choosing godot on 02-20</sub>
-            </div>
-            <div class="text-black">
-                <ul class="list-inside list-disc">
-                    <li><a href="https://digital-riot.apps.sun-tech.co/" class="underline">Digital Riot / 数字崛起</a> <sub>(2023, mini-game "数字崛起" by cocos-creator)</sub></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:-rotate-2">
-            <h2 class="font-bold">C++应用 / C++ Apps</h2>
-            <div class="text-sm text-gray-500">
-                Some old time projects from 201x (I'm willing to improve someday) are also listed here~ <sub>2023-02-20</sub>
-            </div>
-            <div class="text-black mb-3">
-                <ul class="list-inside list-disc">
-                    <li>
-                        <a href="https://github.com/yarcowang/JsonAnalyser" class="underline">Json Analyser</a>
-                        <sub>(C++/Qt, 2016, dev version)</sub>
-                    </li>
-                </ul>
-            </div>
-
-            <h2 class="font-bold">Rust 桌面 / Rust Desktop</h2>
-            <div class="text-sm text-gray-500">
-                I'm putting Rust topics here, and also Tauri apps... <sub>2023-02-30</sub>
-            </div>
-            <div class="text-black">
-                <ul class="list-inside list-disc">
-                    <li>
-                        <a href="https://github.com/yarcowang/rfc-reader.tauri" class="underline">RFC Reader</a>
-                        <sub>(Tauri/ReactJs, 2023, prod)</sub>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:rotate-1">
-            <h2 class="font-bold">PHP: Symfony+</h2>
+        <!-- 后端类 -->
+        <div class="basis-2/5 p-3 border border-solid border-orange-600 rounded-md">
+            <h2 class="font-bold">Web后端技术 / PHP: Symfony+</h2>
             <div class="text-sm text-gray-500">
                 New world PHP... <sub>2023-07-23</sub>
             </div>
-            <div class="text-black">
+            <div class="text-black mb-3">
                 <ul class="list-inside list-disc">
                     <li>
                         <a href="https://github.com/yarcowang/fast_gster.php" class="underline">Fast Getter and Setter</a> <sub>(lib, 2024)</sub>
@@ -198,9 +211,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
 
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:-rotate-6">
             <h2 class="font-bold">Python: DA / AI / DL</h2>
             <div class="text-sm text-gray-500">
                 This is the future, I think <sub>2024-02-02</sub>
@@ -209,23 +220,13 @@
             </div>
         </div>
 
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:rotate-6">
-            <h2 class="font-bold">在线课程 / Online Courses</h2>
-            <div class="text-black">
-                <ul class="list-inside list-disc">
-                    <li>
-                        <a href="ct.html" class="underline">Online Certificates</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:-rotate-6">
-            <h2 class="font-bold">我的文字 / Literature</h2>
+        <!-- special -->
+        <div class="basis-2/5 p-3 border border-solid border-orange-600 rounded-md 2xl:bg-orange-100/50">
+            <h2 class="font-bold">我的思考 / Literature</h2>
             <div class="text-sm text-gray-500">
                 Beyond programming... <sub>2024-03-08</sub>
             </div>
-            <div class="text-black">
+            <div class="text-black mb-3">
                 <ul class="list-inside list-disc">
                     <li>
                         <a href="humans_research.html" class="underline">人类研究与发现 / Human Research and Discovery</a>
@@ -238,15 +239,26 @@
                     </li>
                 </ul>
             </div>
-        </div>
 
-        <div class="m-5 2xl:m-12 md:basis-1/2 lg:basis-1/4 p-3 text-black border border-solid border-orange-600 rounded-md 2xl:-rotate-6 hidden">
-            <h2 class="font-bold">Template: Topic</h2>
+            <h2 class="font-bold">开发者联盟 / World Wide Developer Association</h2>
             <div class="text-sm text-gray-500">
-                Description... <sub>9999-99-99</sub>
+                Trying to touch the world! ;) <sub>2022-06-18</sub>
             </div>
+            <div class="text-black mb-3">
+                <ul class="list-inside list-disc">
+                    <li>
+                        <a href="https://github.com/world-Wide-Developer-Association" class="underline">开发者联盟 / World Wide Developer Association</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="font-bold">在线课程 / Online Courses</h2>
             <div class="text-black">
-                Details...
+                <ul class="list-inside list-disc">
+                    <li>
+                        <a href="ct.html" class="underline">Online Certificates</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
